@@ -1,1 +1,3 @@
 /* /index.html 200
+/posts /posts 200
+/posts/* /posts/*.html 200

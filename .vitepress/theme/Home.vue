@@ -30,7 +30,6 @@
 <script setup>
 import Date from './Date.vue'
 
-localStorage.setItem('darkmode', true);
 
 
 </script>
