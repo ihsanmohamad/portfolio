@@ -20,7 +20,7 @@ module.exports = {
             'a:hover': {
               color: '#f3f4f6',
             },
-            'h1, h2, h3': {
+            'h1, h2, h3, td, th': {
               color: '#f3f4f6'
             },
             
@@ -38,7 +38,26 @@ module.exports = {
               borderLeftWidth: '0.25rem',
               borderLeftColor: '#42b983',
               backgroundColor: '#374151'
+            },
+            hr: {
+              borderColor: '#1F2937',
+            },
+            strong: {
+              color: '#ffffff'
             }
+          },
+        },
+        DEFAULT: {
+          css: {
+            
+            blockquote: {
+              fontWeight: '500',
+              fontStyle: 'italic',
+              color: '#000000',
+              borderLeftWidth: '0.5rem',
+              borderLeftColor: '#42b983'
+            },
+            
           },
         }
       }),

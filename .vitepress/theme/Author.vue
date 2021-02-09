@@ -1,5 +1,5 @@
 <template>
-  <dl class="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200">
+  <dl class="pt-6 pb-10 xl:pt-11 border-b xborder-gray-200 dark:border-gray-800">
     <dt class="sr-only">Authors</dt>
     <dd>
       <ul class="flex justify-center xl:block space-x-8 sm:space-x-12 xl:space-x-0 xl:space-y-8">

@@ -20,34 +20,40 @@ sadasdsadsadsa
 
 ```python
 
-    from tortoise.models import Model
-    from tortoise import fields
-    
-    class Tournament(Model):
-        id = fields.IntField(pk=True)
-        name = fields.TextField()
-    
-        def __str__(self):
-            return self.name
+from tortoise.models import Model
+from tortoise import fields
+
+class Tournament(Model):
+    id = fields.IntField(pk=True)
+    name = fields.TextField()
+
+    def __str__(self):
+        return self.name
 
 
-    class Event(Model):
-        id = fields.IntField(pk=True)
-        name = fields.TextField()
-        tournament = fields.ForeignKeyField('models.Tournament', related_name='events')
-        participants = fields.ManyToManyField('models.Team', related_name='events', through='event_team')
-    
-        def __str__(self):
-            return self.name
+class Event(Model):
+    id = fields.IntField(pk=True)
+    name = fields.TextField()
+    tournament = fields.ForeignKeyField('models.Tournament', related_name='events')
+    participants = fields.ManyToManyField('models.Team', related_name='events', through='event_team')
+
+    def __str__(self):
+        return self.name
 
 
-    class Team(Model):
-        id = fields.IntField(pk=True)
-        name = fields.TextField()
-    
-        def __str__(self):
-            return self.name
+class Team(Model):
+    id = fields.IntField(pk=True)
+    name = fields.TextField()
+
+    def __str__(self):
+        return self.name
 ```
+| Tables        | Are           | Cool  |
+| ------------- |-------------- | ----- |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ## Looking Back at 2020
 
 2020 has been a challenging year, to say the least. Nonetheless, the team has made the best of a difficult situation. Despite an already massive user base, Vue's [NPM downloads](https://npm-stat.com/charts.html?package=vue&from=2020-01-01&to=2020-12-31) and [Devtools weekly active users](https://chrome-stats.com/d/nhdogjmejiglipccpnnnanhbledajbpd) both grew close to 50% throughout 2020. As time of this writing, Vue is being downloaded ~8M times per month on NPM and the devtools extension has ~1.5M weekly active users.
@@ -73,9 +79,10 @@ In addition to iterating on the existing ecosystem, we also invested in explorin
 > In addition to all of these exciting projects, it’s also been incredible to see the community continue to grow despite  the challenges 2020 set forth in terms of being unable to facilitate in-person events. With initiatives such as remote  conferences, meetups and other events, it’s been a joy to see the community interacting in new ways that might not  have been possible otherwise.
 
 
+
 ## Looking Forward to 2021
 
-While Vue 3 beings many fundamental improvements and opens up avenues for future iterations, we are still in a transition period - both in terms of the library ecosystem and best practices involving new APIs. For early 2021, our focus will be further stabilizing the Vue 3 ecosystem, and continuing to help the community through this transition period. Here is a non-exhaustive list of things we’re looking forward to:
+While **Vue 3** beings many fundamental improvements and opens up avenues for future iterations, we are still in a transition period - both in terms of the library ecosystem and best practices involving new APIs. For early 2021, our focus will be further stabilizing the Vue 3 ecosystem, and continuing to help the community through this transition period. Here is a non-exhaustive list of things we’re looking forward to:
 
 1. Stablize current RC/Beta sub projects
 2. Finalize SFC proposals and further polish IDE support

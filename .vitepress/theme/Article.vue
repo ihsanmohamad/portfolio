@@ -1,5 +1,8 @@
 <template>
-  <article class="xl:divide-y xl:divide-gray-700">
+ <div class="pt-8 ">
+          <a class="link" href="/">← Back to the blog</a>
+        </div>
+  <article class="divide-y divide-gray-200 dark:divide-gray-800">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
       <Date :date="date" />
       <h1
@@ -13,28 +16,33 @@
     > -->
     <div>
       <Author />
-      <div class="divide-y divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-        <Content class="prose dark:prose-dark max-w-none pt-10 pb-8 text-xl dark:text-gray-300"/>
+      <div class="divide-y divide-gray-200 dark:divide-gray-800 xl:pb-0 xl:col-span-3 xl:row-span-2">
+        <Content class="prose dark:prose-dark max-w-none pt-10 pb-8 text-lg dark:text-gray-300"/>
       </div>
 
       <footer
-        class="text-sm font-medium leading-5 divide-y divide-gray-700 xl:col-start-1 xl:row-start-2"
+        class="text-sm font-medium leading-5 divide-y divide-gray-200 dark:divide-gray-800 xl:col-start-1 xl:row-start-2"
       >
-        <div v-if="nextPost" class="py-8">
+     
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 py-6 grid grid-cols-2 border-t-2 border-gray-200 dark:border-gray-800">
+        <div v-if="prevPost" class="text-left py-2">
+          <h2 class="text-xs tracking-wide uppercase text-gray-500 dark:text-gray-200">Previous Article</h2>
+          <div class="link">
+            <a :href="prevPost.href">{{ prevPost.title }}</a>
+          </div>
+          
+        </div>
+        <div v-else>
+            <p style="visibility:hidden"></p>
+          </div>
+        <div v-if="nextPost" class="text-right py-2">
           <h2 class="text-xs tracking-wide uppercase text-gray-500 dark:text-gray-200">Next Article</h2>
           <div class="link">
             <a :href="nextPost.href">{{ nextPost.title }}</a>
           </div>
         </div>
-        <div v-if="prevPost" class="py-8">
-          <h2 class="text-xs tracking-wide uppercase text-gray-500 dark:text-gray-200">Previous Article</h2>
-          <div class="link">
-            <a :href="prevPost.href">{{ prevPost.title }}</a>
-          </div>
         </div>
-        <div class="pt-8">
-          <a class="link" href="/">← Back to the blog</a>
-        </div>
+        
       </footer>
     </div>
   </article>
