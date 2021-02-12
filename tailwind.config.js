@@ -26,11 +26,9 @@ module.exports = {
             
             'a code': {
               color: '#f3f4f6',
-            },
-            code: {
-              color: '#f3f4f6',
               backgroundColor: '#374151'
-            },
+
+            },            
             blockquote: {
               fontWeight: '500',
               fontStyle: 'italic',
