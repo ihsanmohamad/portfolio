@@ -4,7 +4,7 @@ module.exports = {
     './posts/*.md',
     './.vitepress/**/*.{vue,js,ts,jsx,tsx}'
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {

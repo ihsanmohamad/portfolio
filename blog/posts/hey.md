@@ -2,8 +2,7 @@
 title: Heyyyy
 date: 2021-02-05
 author: Ihsan Mohamad
-gravatar: eca93da2c67aadafe35d477aa8f454b8
-twitter: '@youyuxi'
+linkedin: 'ihsan-mohamad-121736138'
 head:
   - - meta
     - name: description

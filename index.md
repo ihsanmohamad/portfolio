@@ -4,8 +4,8 @@ subtext: Frontend Developer Enthusiast.
 head:
   - - meta
     - name: description
-      content: hello
+      content: Ihsan Mohamad Homepage, Full Stack Developer Enthusiast
   - - meta
     - name: keywords
-      content: super duper SEO
+      content: ihsan mohamad vue vuejs python fastapi django malaysia graduate junior docker kubernetes aws
 ---

@@ -1,9 +1,10 @@
+
 const fs = require('fs')
 const path = require('path')
 const matter = require('gray-matter')
 
 exports.getPosts = function getPosts(asFeed = false) {
-  const postDir = path.resolve(__dirname, '../posts')
+  const postDir = path.resolve(__dirname, '../blog/posts')
   return fs
     .readdirSync(postDir)
     .map((file) => {
@@ -11,7 +12,7 @@ exports.getPosts = function getPosts(asFeed = false) {
       const { data, content, excerpt } = matter(src, { excerpt: true })
       const post = {
         title: data.title,
-        href: `/posts/${file.replace(/\.md$/, '.html')}`,
+        href: `/blog/posts/${file.replace(/\.md$/, '.html')}`,
         date: formatDate(data.date),
         excerpt
       }
