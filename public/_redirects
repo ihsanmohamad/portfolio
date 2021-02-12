@@ -1,4 +1,0 @@
-/* /index.html 200
-/posts /posts 200
-/blog/* /blog.html 200
-/blog/posts/* /blog/posts/*.html 200
