@@ -12,7 +12,7 @@ head:
       content: vue vuejs fastapi django malaysia work fresh graduate entry level junior developer python 
 ---
 
-Hey, I'm recently finished my degree.
+Hey, I've recently finished my degree.
 
 ---
 

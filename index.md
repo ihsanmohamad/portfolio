@@ -1,6 +1,6 @@
 ---
 textTitle: Ihsan Mohamad
-subtext: Frontend Developer Enthusiast.
+subtext: Full Stack web developer
 head:
   - - meta
     - name: description

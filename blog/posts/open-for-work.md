@@ -12,7 +12,7 @@ head:
       content: vue vuejs fastapi django malaysia work fresh graduate entry level junior developer python 
 ---
 
-I'm open to work now!
+I'm open for work now!
 
 ---
 
