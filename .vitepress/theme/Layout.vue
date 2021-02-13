@@ -5,7 +5,7 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
       <nav class="flex justify-between items-center py-6 font-bold">
         <a class="text-xl" href="/" aria-label="Ihsan Mohamad">
-          <img class="inline-block mr-2" style="width:36px" alt="logo" src="/logo.svg" />
+          <img class="inline-block mr-2" style="width:36px" alt="logo" src="/profile-pic.webp" />
           <span v-if="!isIndex" class="hidden md:inline dark:text-gray-100">Ihsan Mohamad</span>
         </a>
         <div class="text-base space-x-5 text-gray-500 dark:text-gray-300 leading-5  inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
