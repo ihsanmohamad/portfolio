@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { useRoute, useSiteData } from 'vitepress'
 import Home from './Home.vue'
 import NotFound from './NotFound.vue'
@@ -65,23 +65,20 @@ const isDark = async function() {
 }
 
 const setTheme = async () => {
-  darkMode.value = localStorage.getItem('dark-mode')
+  if (localStorage.getItem("dark-mode") !== null) {
+  darkMode.value = JSON.parse(localStorage.getItem("dark-mode"))
+  }
+  else {
+    darkMode.value = false
+  }
 }
 
 const theme = computed(() => darkMode.value ? 'dark' : 'light')
 
 
-
-// onBeforeMount(() => {
-//   if(localStorage.getItem('dark-mode') !== null){
-//     darkMode.value = localStorage.getItem('dark-mode')
-//   }
-//   else {
-//     localStorage.setItem('dark-mode', false)
-//     darkMode.value = localStorage.getItem('dark-mode')
-//   }
-
-// })
+onMounted(() =>{
+  setTheme()
+})
 
 
 </script>

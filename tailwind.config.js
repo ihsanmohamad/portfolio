@@ -20,10 +20,10 @@ module.exports = {
             'a:hover': {
               color: '#f3f4f6',
             },
-            'h1, h2, h3, td, th': {
+            'h1, h2, h3, td, th, ol li::before': {
               color: '#f3f4f6'
             },
-            
+
             'a code': {
               color: '#f3f4f6',
               backgroundColor: '#374151'

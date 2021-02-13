@@ -19,7 +19,7 @@
     <div>
       <Author />
       <div class="divide-y divide-gray-200 dark:divide-gray-800 xl:pb-0 xl:col-span-3 xl:row-span-2">
-        <Content class="prose dark:prose-dark max-w-none pt-10 pb-8 text-lg dark:text-gray-300"/>
+        <Content class="prose dark:prose-dark max-w-none pt-10 pb-8 text-base sm:text-xl dark:text-gray-300"/>
       </div>
 
       <footer
