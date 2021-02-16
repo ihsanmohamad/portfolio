@@ -76,7 +76,7 @@ const theme = computed(() => !darkMode.value ? 'light' : 'dark')
 
 
 onBeforeMount(() =>{
-  setTheme()
+  setTheme();
 })
 
 
