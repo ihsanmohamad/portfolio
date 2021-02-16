@@ -20,9 +20,9 @@
       </nav>
     </div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 min-h-screen ">
-          <Home v-if="isIndex"/>
-          <Blog v-else-if="isBlog"/>
-          <Article v-else-if="isArticle"/>
+          <Home v-if="isIndex" />
+          <Blog v-else-if="isBlog" />
+          <Article v-else-if="isArticle" />
           <NotFound v-else />
     </main>
   
@@ -54,7 +54,7 @@ function findCurrentIndex() {
   return posts.findIndex(p => p.href === route.path)
 }
 
-const isArticle =  computed(() => route.path === posts[findCurrentIndex()].href )
+const isArticle =  computed(() => route.path === posts[findCurrentIndex()]?.href )
 
 const darkMode = ref(Boolean)
 
@@ -76,7 +76,7 @@ const theme = computed(() => !darkMode.value ? 'light' : 'dark')
 
 
 onBeforeMount(() =>{
-  setTheme();
+  setTheme()
 })
 
 

@@ -9,7 +9,7 @@ import NotFound from './NotFound.vue'
 export default {
   Layout,
   Blog,
-  NotFound: () => NotFound,
+  NotFound,
   enhanceApp({ app, router, siteData }) {
   }
 }
