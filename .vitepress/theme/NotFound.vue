@@ -8,3 +8,14 @@
 </div>
 
 </template>
+
+<script setup>
+import { onBeforeMount } from 'vue'
+import { useRouter } from 'vitepress'
+
+const router = useRouter()
+
+onBeforeMount(() =>{
+    router.go('/404')
+})
+</script>

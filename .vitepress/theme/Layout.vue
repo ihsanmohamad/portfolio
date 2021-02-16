@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onBeforeMount } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { useRoute, useSiteData } from 'vitepress'
 import Home from './Home.vue'
 import NotFound from './NotFound.vue'
@@ -72,10 +72,10 @@ const setTheme = async () => {
   }
 }
 
-const theme = computed(() => !darkMode.value ? 'light' : 'dark')
+const theme = computed(() => darkMode.value ? 'dark' : 'light')
 
 
-onBeforeMount(() =>{
+onMounted(() =>{
   setTheme()
 })
 
