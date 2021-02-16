@@ -1,5 +1,4 @@
 <template>
-<!-- <div :class="!darkMode ? 'dark' : 'light'"> -->
 <div :class="theme">
   <div class="antialiased dark:bg-dark">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
@@ -21,10 +20,10 @@
       </nav>
     </div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 min-h-screen ">
-      <Home v-if="isIndex" />
-      <Blog v-else-if="isBlog" />
-      <Article v-else-if="isArticle" />
-      <NotFound v-else />
+          <Home v-if="isIndex"/>
+          <Blog v-else-if="isBlog"/>
+          <Article v-else-if="isArticle"/>
+          <NotFound v-else />
     </main>
   
     <footer class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 pt-6 pb-4 grid grid-cols-2 border-t-2 border-gray-200 dark:border-gray-800">
@@ -37,7 +36,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref, onBeforeMount } from 'vue'
 import { useRoute, useSiteData } from 'vitepress'
 import Home from './Home.vue'
 import NotFound from './NotFound.vue'
@@ -55,7 +54,7 @@ function findCurrentIndex() {
   return posts.findIndex(p => p.href === route.path)
 }
 
-const isArticle =  computed(() => route.path === posts[findCurrentIndex()].href )
+const isArticle =  computed(() => route.path === posts[findCurrentIndex()]?.href )
 
 const darkMode = ref(Boolean)
 
@@ -73,10 +72,10 @@ const setTheme = async () => {
   }
 }
 
-const theme = computed(() => darkMode.value ? 'dark' : 'light')
+const theme = computed(() => !darkMode.value ? 'light' : 'dark')
 
 
-onMounted(() =>{
+onBeforeMount(() =>{
   setTheme()
 })
 

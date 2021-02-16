@@ -2,15 +2,13 @@
  <div class="pt-8 ">
           <a class="link" href="/blog">← Back to the blog</a>
         </div>
-  <article class="divide-y divide-gray-200 dark:divide-gray-800">
+  <article class="">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
       <Date :date="date" />
       <h1
-        class="text-5xl leading-9 font-extrabold text-gray-900 dark:text-gray-200 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+        class="text-3xl leading-9 font-extrabold text-gray-900 dark:text-gray-200 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
       >{{ data.title }}</h1>
-      <h1
-        class="text-5xl leading-9 font-extrabold text-gray-900 dark:text-gray-200 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
-      >{{ test }}</h1>
+      
     </header>
     <!-- <div
       class="divide-y xl:divide-y-0 divide-gray-200 xl:grid xl:grid-cols-4 xl:gap-x-6 pb-16 xl:pb-20"
