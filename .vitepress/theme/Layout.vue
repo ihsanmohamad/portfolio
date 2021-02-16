@@ -54,7 +54,7 @@ function findCurrentIndex() {
   return posts.findIndex(p => p.href === route.path)
 }
 
-const isArticle =  computed(() => route.path === posts[findCurrentIndex()].href )
+const isArticle =  computed(() => route.path === posts[findCurrentIndex()]?.href )
 
 const darkMode = ref(Boolean)
 
