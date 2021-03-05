@@ -27,7 +27,7 @@
     </main>
   
     <footer class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 pt-6 pb-4 grid grid-cols-2 border-t-2 border-gray-200 dark:border-gray-800">
-    <p class="text-left text-sm dark:text-gray-100">Designed by © Ihsan</p>
+    <p class="text-left text-sm dark:text-gray-100">Designed by © Ihsan 2021</p>
     <p class="text-right text-sm dark:text-gray-100">Powered with Vitepress</p>
     </footer>
   

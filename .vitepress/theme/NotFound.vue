@@ -16,6 +16,6 @@ import { useRouter } from 'vitepress'
 const router = useRouter()
 
 onBeforeMount(() =>{
-    router.go('/404')
+    router.go('/notfound.html')
 })
 </script>

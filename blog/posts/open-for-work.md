@@ -1,8 +1,8 @@
 ---
 title: The most challenging period of my life! Looking for work
-date: 2021-02-11
+date: 2021-03-02
 author: Ihsan Mohamad
-linkedin: 'ihsan-mohamad-121736138'
+linkedin: 'ihsanmohamad13'
 head:
   - - meta
     - name: description
