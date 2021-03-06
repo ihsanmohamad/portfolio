@@ -11,6 +11,9 @@
     <div class="text-xs mt-2 mb-4 text-gray-800 dark:text-gray-100">
       {{ repository.description }}
     </div>
+    <div v-if="repository.homepage" class="text-xs mt-2 mb-4 text-gray-800 dark:text-gray-100">
+      <a :href="repository.homepage" target="_blank">{{ repository.homepage }}</a>
+    </div>
     <div class="mt-auto text-xs flex">
       <div v-if="repository.language" class="flex items-center mr-4">
         <span
