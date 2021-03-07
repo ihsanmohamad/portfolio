@@ -91,29 +91,29 @@ import StackItem from './components/StackItem.vue'
       {
         id: 341815680,
         name: "restaurant_analysis_backend",
-        description: "Backend Server for Makan Manoi, built with FastAPI.",
+        description: "Backend Server for Cari Makan, built with FastAPI.",
         language: 'Python',
         stargazers_count: 0,
-        homepage: "https://makanmanoi.herokuapp.com/docs",
+        homepage: "https://carimakan.herokuapp.com/docs",
         forks: 0
       },
       
       {
         id: 341690688,
         name: "restaurant_analysis",
-        description: "Frontend Server for Makan Manoi, built with Vue 3.",
+        description: "Frontend Server for Cari Makan, built with Vue 3.",
         language: 'Vue',
         stargazers_count: 0,
-        homepage: "https://makanmanoi.netlify.app/",
+        homepage: "https://carimakan.netlify.app/",
         forks: 0
       },
       ]
    
       const projects = [{
-        title: "Makan Manoi",
+        title: "Cari Makan",
         description: "Search for places to eat with review analysis",
-        url: "https://makanmanoi.netlify.app",
-        image: "/img/project-makan-manoi.webp"
+        url: "https://carimakan.netlify.app",
+        image: "/img/project-cari-makan.webp"
       }]
 
       const stacks = [{

@@ -39,7 +39,7 @@ from fastapi.responses import StreamingResponse
 import io
 
 def fastApp() -> FastAPI:
-    app = FastAPI(title="Makan Manoi", description="Makan Manoi System")
+    app = FastAPI(title="Cari Makan", description="Cari Makan System")
     
     origins = [
     "http://localhost.",
@@ -101,7 +101,7 @@ async def download_data(place_id: str):
         return None
 ```
 
-You can try this on one of my project [here](https://makanmanoi.herokuapp.com/docs). 
+You can try this on one of my project [here](https://carimakan.herokuapp.com/docs). 
 
 ## I'll explain later lol
 

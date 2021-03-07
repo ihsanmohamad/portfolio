@@ -1,5 +1,5 @@
 ---
-title: Makan Manoi - Simple project on google map reviews
+title: Cari Makan - Simple project on google map reviews
 date: 2021-03-05
 author: Ihsan Mohamad
 linkedin: 'ihsanmohamad13'
@@ -16,23 +16,23 @@ Made this simple project to play around with google maps review. Build with Vue 
 
 ---
 
-## Makan Manoi
+## Cari Makan
 
 <p align="center">
-  <img alt="makan manoi homepage"  :src="$withBase('/img/makan-manoi.webp')">
+  <img alt="makan manoi homepage"  :src="$withBase('/img/cari-makan.webp')">
 </p>
 
 Hey just recently, I made this website to play around with the google maps review. Here you can search for any restaurant you want. 
 
 <p align="center">
-  <img alt="makan manoi restaurant page" :src="$withBase('/img/makan-manoi2.webp')">
+  <img alt="makan manoi restaurant page" :src="$withBase('/img/cari-makan2.webp')">
 </p>
 
 
 Well, it's best to experience it yourself. Why don't you go give it a try. Below is the links for the source code and the demo.
 
 ### Frontend
-You can see the [demo here](https://makanmanoi.netlify.app/) and the [source code here](https://github.com/ihsanmohamad/restaurant_analysis)
+You can see the [demo here](https://carimakan.netlify.app/) and the [source code here](https://github.com/ihsanmohamad/restaurant_analysis)
 
 ### Backend
-You can try the [api demo here](https://makanmanoi.herokuapp.com/docs) and the [source code here](https://github.com/ihsanmohamad/restaurant_analysis_backend)
+You can try the [api demo here](https://carimakan.herokuapp.com/docs) and the [source code here](https://github.com/ihsanmohamad/restaurant_analysis_backend)
