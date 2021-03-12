@@ -8,7 +8,7 @@
         {{ repository.name }}
       </a>
     </div>
-    <div class="text-xs mt-2 mb-4 text-gray-800 dark:text-gray-100">
+    <div class="text-sm mt-2 mb-4 text-gray-800 dark:text-gray-100">
       {{ repository.description }}
     </div>
     <div v-if="repository.homepage" class="text-xs mt-2 mb-4 text-gray-800 dark:text-gray-100">

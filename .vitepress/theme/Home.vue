@@ -89,22 +89,20 @@ import StackItem from './components/StackItem.vue'
         forks: 0
       },
       {
-        id: 341815680,
-        name: "restaurant_analysis_backend",
-        description: "Backend Server for Cari Makan, built with FastAPI.",
-        language: 'Python',
-        stargazers_count: 0,
-        homepage: "https://carimakan.herokuapp.com/docs",
+        id: 318259406,
+        name: "sport-jom",
+        description: "Frontend built using Ionic Vue with Vuex.",
+        language: 'Vue',
+        stargazers_count: 1,
         forks: 0
       },
       
       {
-        id: 341690688,
-        name: "restaurant_analysis",
-        description: "Frontend Server for Cari Makan, built with Vue 3.",
-        language: 'Vue',
-        stargazers_count: 0,
-        homepage: "https://carimakan.netlify.app/",
+        id: 344974779,
+        name: "sport-jom-backend",
+        description: "Backend Server of Sport Jom, built with FastAPI",
+        language: 'Python',
+        stargazers_count: 1,
         forks: 0
       },
       ]
