@@ -93,6 +93,7 @@ import StackItem from './components/StackItem.vue'
         name: "sport-jom",
         description: "Frontend built using Ionic Vue with Vuex.",
         language: 'Vue',
+        html_url: "https://github.com/ihsanmohamad/sport-jom",
         stargazers_count: 1,
         forks: 0
       },
@@ -102,6 +103,7 @@ import StackItem from './components/StackItem.vue'
         name: "sport-jom-backend",
         description: "Backend Server of Sport Jom, built with FastAPI",
         language: 'Python',
+        html_url: "https://github.com/ihsanmohamad/sport-jom-backend",
         stargazers_count: 1,
         forks: 0
       },
